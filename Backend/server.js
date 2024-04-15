@@ -5,7 +5,7 @@ const http = require("http");
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3002" }));
+app.use(cors({ origin: "*" }));
 
 app.get("/api/user", (req, res) => {
   try {
